@@ -20,6 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         refresh(self)
         constructMenu()
         popover.contentViewController = ConfigViewController.freshController()
+        var helloWorldTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(AppDelegate.refresh), userInfo: nil, repeats: true)
+
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
