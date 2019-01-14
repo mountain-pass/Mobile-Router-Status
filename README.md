@@ -9,3 +9,7 @@ If you would like your router to be supported, please raise an [issue][issues], 
 
 [issues]: https://github.com/mountain-pass/Mobile-Router-Status/issues
 [pulls]: https://github.com/mountain-pass/Mobile-Router-Status/pulls
+
+## LICENSE ##
+
+GNU AFFERO GENERAL PUBLIC LICENSE, Version 3, 19 November 2007
