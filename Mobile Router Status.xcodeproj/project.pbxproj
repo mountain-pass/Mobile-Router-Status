@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261B0A5421E730C100316185 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261B0A5221E730C100316185 /* ConfigViewController.swift */; };
+		261B0A5521E730C100316185 /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261B0A5321E730C100316185 /* ConfigViewController.xib */; };
 		263539CB21E3F3A60079EC1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263539CA21E3F3A60079EC1E /* AppDelegate.swift */; };
 		263539CD21E3F3A60079EC1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263539CC21E3F3A60079EC1E /* ViewController.swift */; };
 		263539CF21E3F3A80079EC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263539CE21E3F3A80079EC1E /* Assets.xcassets */; };
 		263539D221E3F3A80079EC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263539D021E3F3A80079EC1E /* Main.storyboard */; };
+		26D4B07A21ED24A6005923C3 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 26D4B07921ED24A6005923C3 /* example.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261B0A5221E730C100316185 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		261B0A5321E730C100316185 /* ConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
 		263539C721E3F3A60079EC1E /* Mobile Router Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Router Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		263539CA21E3F3A60079EC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		263539CC21E3F3A60079EC1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +26,7 @@
 		263539D121E3F3A80079EC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		263539D321E3F3A80079EC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		263539D421E3F3A80079EC1E /* Mobile_Router_Status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mobile_Router_Status.entitlements; sourceTree = "<group>"; };
+		26D4B07921ED24A6005923C3 /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 		263539BE21E3F3A60079EC1E = {
 			isa = PBXGroup;
 			children = (
+				26D4B07921ED24A6005923C3 /* example.json */,
 				263539C921E3F3A60079EC1E /* Mobile Router Status */,
 				263539C821E3F3A60079EC1E /* Products */,
 			);
@@ -53,6 +60,8 @@
 		263539C921E3F3A60079EC1E /* Mobile Router Status */ = {
 			isa = PBXGroup;
 			children = (
+				261B0A5221E730C100316185 /* ConfigViewController.swift */,
+				261B0A5321E730C100316185 /* ConfigViewController.xib */,
 				263539CA21E3F3A60079EC1E /* AppDelegate.swift */,
 				263539CC21E3F3A60079EC1E /* ViewController.swift */,
 				263539CE21E3F3A80079EC1E /* Assets.xcassets */,
@@ -121,8 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D4B07A21ED24A6005923C3 /* example.json in Resources */,
 				263539CF21E3F3A80079EC1E /* Assets.xcassets in Resources */,
 				263539D221E3F3A80079EC1E /* Main.storyboard in Resources */,
+				261B0A5521E730C100316185 /* ConfigViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +146,7 @@
 			files = (
 				263539CD21E3F3A60079EC1E /* ViewController.swift in Sources */,
 				263539CB21E3F3A60079EC1E /* AppDelegate.swift in Sources */,
+				261B0A5421E730C100316185 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +283,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Mobile Router Status/Mobile_Router_Status.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 28C74GW3CS;
@@ -290,7 +301,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Mobile Router Status/Mobile_Router_Status.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 28C74GW3CS;

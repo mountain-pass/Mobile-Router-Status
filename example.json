@@ -1,0 +1,514 @@
+{
+    "custom": {
+        "lastWifiChan": 13,
+        
+        "hiddenMenuEnabled": false,
+        
+        "hideAdminPassword": false,
+        "carrierSim": "Carrier",
+        "end": 0
+    },
+    "webd": {
+        "adminPassword": "****************",
+        
+        "hideAdminPassword": false,
+        
+        "hintNumber": 0,
+        "end": ""
+    },
+    "lcd": {
+        "backlightActive": false,
+        
+        "end": ""
+    },
+    "led": {
+        "end": ""
+    },
+    "sim": {
+        "pin": {
+            "mode": "Disabled",
+            "retry": 3,
+            "end": ""
+        },
+        "puk": {
+            "retry": 10
+        },
+        "mep": {},
+        
+        "phoneNumber": "",
+        
+        "iccid": "89610182000071768129",
+        "imsi": "505013513670109",
+        
+        "status": "Ready",
+        "sprintSimLock": 0,
+        
+        "end": ""
+    },
+    "sms": {
+        "ready": true,
+        
+        "unreadMsgs": 0,
+        
+        "end": ""
+    },
+    "session": {
+        "userRole": "Guest",
+        "lang": "en",
+        "hintDisplayPassword": "",
+        "secToken": "Z6Il8OtrJFUp1rbA7GywKIRXviVzVPu",
+        "clientIP": "192.168.12.83",
+        "supportedLangList": [
+            {
+                "id": "en",
+                "isCurrent": true,
+                "label": "English"
+            },
+            
+            {}
+        ]
+    },
+    "general": {
+        "defaultLanguage": "en",
+        "PRIid": "23113199",
+        
+        "activated": true,
+        
+        "TCAaccepted": true,
+        
+        "showWebInfo": false,
+        
+        "devTemperature": 34,
+        "verMajor": 42,
+        "verMinor": 0,
+        "environment": "Target",
+        "currTime": 1231531854,
+        "timeZoneOffset": 39600,
+        "deviceName": "Nighthawk M1",
+        "useMetricSystem": true,
+        "factoryResetStatus": "NotStarted",
+        
+        "setupCompleted": true,
+        "warrantyDateCode": "",
+        "languageSelected": false,
+        "upTime": 319707,
+        
+        "systemAlertList": {
+            "list": [{}],
+            "count": 0
+        },
+        
+        "apiVersion": "2.0",
+        "companyName": "Telstra",
+        
+        "usbDevicesURL": "/Forms/readyshareUsbDevicesInfo?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "nwFoldersURL": "/Forms/readyshareNWFoldersInfo?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        
+        "configURL": "/Forms/config?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "profileURL": "/Forms/profile?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "pinChangeURL": "/Forms/pinChange?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "portCfgURL": "/Forms/portCfg?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "portFilterURL": "/Forms/portFilter?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        "wifiACLURL": "/Forms/wifiACL?sessionId=00000001%2DmbNvcghs4mDQvGVJQE8yekunXB7dN44",
+        
+        "supportedLangList": [
+            {
+                "id": "en",
+                "isCurrent": "true",
+                "isDefault": "true",
+                "label": "English",
+                "token1": "/romfs/lcd/en.tr",
+                "token2": ""
+            },
+            
+            {}
+        ]
+    },
+    
+    "power": {
+        "PMState": "Online",
+        "SmState": "Online",
+        "battLowThreshold": 15,
+        "autoOff": {
+            "onUSBdisconnect": {
+                "end": ""
+            },
+            "onIdle": {
+                "timer": {
+                    "end": ""
+                }
+            }
+        },
+        "standby": {
+            "onIdle": {
+                "timer": {
+                    "end": ""
+                }
+            }
+        },
+        "autoOn": {
+            "end": ""
+        },
+        
+        "batteryTemperature": 33,
+        "batteryVoltage": 4219,
+        "battChargeLevel": 100,
+        "battChargeSource": "None",
+        "batteryState": "Normal",
+        "battChargeAlgorithm": "Normal",
+        
+        "charging": false,
+        
+        "deviceTempCritical": false,
+        
+        "resetRequired": "NoResetRequired",
+        
+        "batteryTempState": "Normal",
+        
+        "wifiOff": {
+            "end": ""
+        },
+        
+        "boost": {
+            "cableConnected": false,
+            
+            "end": ""
+        },
+        
+        "lpm": false,
+        
+        "end": ""
+    },
+    "wwan": {
+        "prlVersion": 0,
+        
+        "LTEBandPriority": "0",
+        
+        "netScanStatus": "NotStarted",
+        
+        "mtuChangeEnabled": false,
+        "LTEeHRPDConfig": "NotForcedDisabled",
+        "roamingEnhancedIndicator": 0,
+        "roamingMode": "HomeOnly",
+        "roamingGuardDom": "NotForcedDisabled",
+        "roamingGuardIntl": "NotForcedDisabled",
+        "roamingType": "Home",
+        "roamMenuDisplay": false,
+        
+        "autoBandRegionChanged": false,
+        
+        "currentNWserviceType": "LteService",
+        "registerRejectCode": 0,
+        
+        "netRegMode": "Auto",
+        "IPv6": "",
+        "roaming": false,
+        "IP": "10.103.108.77",
+        "registerNetworkDisplay": "Telstra",
+        "RAT": "Preferred3G",
+        
+        "bandRegion": [
+            {
+                "index": 0,
+                "name": "Auto",
+                "current": true
+            },
+            {
+                "index": 1,
+                "name": "WCDMA All",
+                "current": false
+            },
+            {
+                "index": 2,
+                "name": "LTE All",
+                "current": false
+            },
+            {}
+        ],
+        
+        "autoconnect": "HomeNetwork",
+        
+        "profile": {
+            "promptForApnSelection": false,
+            "end": ""
+        },
+        
+        "promptForPwd": "Disabled",
+        
+        "dataUsage": {
+            "total": {
+                "lteBillingTx": 0,
+                "lteBillingRx": 0,
+                
+                "cdmaBillingTx": 0,
+                "cdmaBillingRx": 0,
+                
+                "gwBillingTx": 0,
+                "gwBillingRx": 0,
+                
+                "lteLifeTx": 0,
+                "lteLifeRx": 0,
+                
+                "cdmaLifeTx": 0,
+                "cdmaLifeRx": 0,
+                
+                "gwLifeTx": 0,
+                "gwLifeRx": 0,
+                
+                "end": ""
+            },
+            
+            "server": {
+                "accountType": "",
+                "subAccountType": "",
+                
+                "end": ""
+            },
+            
+            "serverDataRemaining": 0,
+            "serverDataTransferred": 8976481648,
+            "serverDataTransferredIntl": 0,
+            "serverDataValidState": "Valid",
+            "serverDaysLeft": 0,
+            "serverErrorCode": "",
+            "serverLowBalance": false,
+            "serverMsisdn": "",
+            "serverRechargeUrl": "",
+            "dataWarnEnable": false,
+            "planSize": 0,
+            "planDescription": "",
+            "prepaidStackedPlans": 0,
+            "prepaidStackedPlansIntl": 0,
+            
+            "prepaidAccountState": "Hot",
+            
+            "accountType": "Postpaid",
+            
+            "share": {
+                "enabled": false,
+                "dataTransferredOthers": 0,
+                
+                "lastSync": "0",
+                "end": ""
+            },
+            "generic": {
+                "dataLimitValid": true,
+                "usageHighWarning": 0,
+                "fallbackSupported": true,
+                "lastSucceeded": "1231531209",
+                "billingDay": 1,
+                "nextBillingDate": "1233496800",
+                "lastSync": "1231530246",
+                
+                "billingCycleRemainder": 22,
+                
+                "billingCycleLimit": 32212254720,
+                "dataTransferred": 8976481648,
+                "dataTransferredRoaming": 0,
+                
+                "lastReset": "0",
+                
+                "userDisplayFormat": "BillingCycle",
+                "end": ""
+            }
+        },
+        
+        "netManualNoCvg": false,
+        "connection": "Connected",
+        "connectionType": "IPv4Only",
+        "currentPSserviceType": "LTE",
+        "ca": {
+            "SCCcount": 0,
+            
+            "end": ""
+        },
+        "connectionText": "4G",
+        "sessDuration": 319676,
+        "sessStartTime": 1231212178,
+        
+        "dataTransferred": {
+            "totalb": "174429715",
+            "rxb": "39697021",
+            "txb": "134732694"
+        },
+        
+        "signalStrength": {
+            "rssi": -84,
+            "rscp": 0,
+            "ecio": 0,
+            "rsrp": -117,
+            "rsrq": -13,
+            "bars": 1,
+            "sinr": 3,
+            "end": ""
+        },
+        "laa": {
+            "supported": false,
+            "enabled": false,
+            "end": ""
+        }
+    },
+    "wwanadv": {
+        "curBand": "LTE B28",
+        "radioQuality": 36,
+        "country": "AUS",
+        "RAC": 0,
+        "LAC": 8214,
+        "MCC": "505",
+        "MNC": "01",
+        "MNCFmt": 2,
+        "cellId": 133861890,
+        "chanId": 9410,
+        "primScode": -1,
+        "plmnSrvErrBitMask": 0,
+        "chanIdUl": 27410,
+        "txLevel": -500,
+        "rxLevel": -117,
+        "end": ""
+    },
+    "ethernet": {},
+    
+    "wifi": {
+        "clientCount": 2,
+        "country": "AU",
+        
+        "wps": {
+            "end": ""
+        },
+        "guest": {
+            "maxClientCnt": 20,
+            "enabled": false,
+            
+            "SSID": "TPPW4G_E407_5G",
+            
+            "accessProfile": "Full",
+            
+            "timerEnable": false,
+            "timerTimestamp": 0,
+            "timerValue": 3600,
+            
+            "chan": 0,
+            "mode": "M802_11_ANAC",
+            "DHCP": {
+                "range": {
+                    "end": ""
+                }
+            }
+        },
+        "aux": {
+            "enabled": true,
+            "AuxMode": "Station",
+            "arloSupported": true,
+            "SSID": "TPPW4G_E407-GUEST",
+            
+            "maxClientCnt": 10,
+            
+            "chan": 0,
+            "mode": "M802_11_ANAC",
+            
+            "arloSSID": "",
+            
+            "end": ""
+        },
+        
+        "offload": {
+            "dataTransferred": {
+                "end": ""
+            },
+            
+            "end": ""
+        },
+        
+        "end": ""
+    },
+    "router": {
+        "hostName": "m",
+        "domainName": "home",
+        "ipPassThroughEnabled": false,
+        "ipPassThroughSupported": true,
+        "VPNpassthrough": true,
+        
+        "clientList": {
+            "list": [
+                {
+                    "IP": "192.168.12.69",
+                    "MAC": "B8:C1:11:A8:B9:FA",
+                    "name": "",
+                    "media": "WiFi",
+                    "source": "PrimaryAP"
+                },
+                
+                {
+                    "IP": "192.168.12.83",
+                    "MAC": "A4:5E:60:E1:27:EB",
+                    "name": "",
+                    "media": "WiFi",
+                    "source": "PrimaryAP"
+                },
+                
+                {}
+            ],
+            "count": 2
+        },
+        
+        "end": ""
+    },
+    "fota": {
+        "fwupdater": {
+            "available": false,
+            
+            "error": false,
+            
+            "state": "NoNewFw",
+            
+            "end": ""
+        }
+    },
+    "failover": {
+        "end": ""
+    },
+    
+    "eventlog": {
+        "end": 0
+    },
+    "ui": {
+        "serverDaysLeftHide": false,
+        "promptActivation": true,
+        
+        "end": 0
+    },
+    
+    "accesscontrol": {
+        "nlpc": {
+            "end": 0
+        },
+        
+        "blocksites": {
+            "end": 0
+        },
+        
+        "schedulerBlockingActive": false,
+        
+        "end": 0
+    },
+    
+    "ready": {
+        "shareSupported": false,
+        
+        "cloudSupported": false,
+        
+        "deviceShare": {
+            "extMediaSupported": true,
+            
+            "end": 0
+        },
+        
+        "cloud": {
+            "end": 0
+        }
+    },
+    
+    "mediaserver": {
+        "end": 0
+    }
+}
