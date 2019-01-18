@@ -8,10 +8,10 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "10.1"
+      xcode: "8.3.3"
 
     steps:
-      - checkout  
+      - checkout
 
       # Install CocoaPods
       - run:
