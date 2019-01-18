@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         print("\(NSRunningApplication.current.localizedName!)")
+        self.statusItem.button?.image = NSImage(named:NSImage.Name("signal0"))
         refresh(self)
         constructMenu()
         popover.contentViewController = ConfigViewController.freshController()
