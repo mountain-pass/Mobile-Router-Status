@@ -1,0 +1,43 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {}
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "prettier/standard",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["prettier"],
+  "globals": {
+    "exports": true,
+    "console": true,
+    "require": true,
+    "Promise": true,
+    "process": true,
+    "global": true,
+    "module": true,
+    "Buffer": true,
+    "Proxy": true,
+    "setTimeout": true,
+    "setInterval": true
+  },
+  "settings": {},
+  "rules": {
+    "strict": 2,
+    "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*"],
+        "optionalDependencies": false,
+        "peerDependencies": true
+      }
+    ],
+    "no-console": 2
+  }
+}
