@@ -26,6 +26,7 @@
 		263539D121E3F3A80079EC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		263539D321E3F3A80079EC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		263539D421E3F3A80079EC1E /* Mobile_Router_Status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mobile_Router_Status.entitlements; sourceTree = "<group>"; };
+		26CDA4DE21F5139C00B0A901 /* Mobile Router Status.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mobile Router Status.entitlements"; sourceTree = "<group>"; };
 		26D4B07921ED24A6005923C3 /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +61,7 @@
 		263539C921E3F3A60079EC1E /* Mobile Router Status */ = {
 			isa = PBXGroup;
 			children = (
+				26CDA4DE21F5139C00B0A901 /* Mobile Router Status.entitlements */,
 				261B0A5221E730C100316185 /* ConfigViewController.swift */,
 				261B0A5321E730C100316185 /* ConfigViewController.xib */,
 				263539CA21E3F3A60079EC1E /* AppDelegate.swift */,
@@ -104,6 +106,11 @@
 				TargetAttributes = {
 					263539C621E3F3A60079EC1E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
