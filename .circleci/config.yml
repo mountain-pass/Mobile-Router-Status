@@ -20,9 +20,10 @@ jobs:
       - run:
           name: Sign Application
           command: |
-            base64 --help
             echo ${DEV_CERT} | base64 -D -i - -o developer-cert.p12
-            security import developer-cert.p12 -P ${DEV_CERT_PWD}
+            security create-keychain -p 'temporaryPassword' MyKeychain.keychain
+            security list-keychains -d user -s login.keychain MyKeychain.keychain
+            security import developer-cert.p12 -k "MyKeychain.keychain" -P ${DEV_CERT_PWD} -A
             codesign -f -s "Mac Developer: tompahoward@gmail.com (4BDJKDUR27)" build/Release/Mobile\ Router\ Status.app
 
       - run:
