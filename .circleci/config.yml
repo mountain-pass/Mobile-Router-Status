@@ -18,6 +18,14 @@ jobs:
           command: xcodebuild
 
       - run:
+          name: Sign Application
+          command: |
+            base64 --help
+            echo ${DEV_CERT} | base64 -D -i - -o developer-cert.p12
+            security import developer-cert.p12 -P ${DEV_CERT_PWD}
+            codesign -f -s "Mac Developer: tompahoward@gmail.com (4BDJKDUR27)"security import build/Release/Mobile\ Router\ Status.app
+
+      - run:
           # compress Xcode's build output so that it can be stored as an artifact
           name: Compress app for storage
           command: zip -r Mobile-Router-Status.zip build/Release/Mobile\ Router\ Status.app
