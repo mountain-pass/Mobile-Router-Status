@@ -13,6 +13,15 @@ jobs:
       - checkout
 
       - run:
+          name: Import Cert
+          command: |
+            /bin/echo ${DEV_CERT} | /usr/bin/base64 -D -i - -o developer-cert.p12
+            /usr/bin/security create-keychain -p 'temporaryPassword' MyKeychain.keychain
+            /usr/bin/security list-keychains -s login.keychain MyKeychain.keychain
+            /usr/bin/security set-keychain-settings MyKeychain.keychain
+            /usr/bin/security import developer-cert.p12 -k "MyKeychain.keychain" -P ${DEV_CERT_PWD} -T /usr/bin/codesign
+
+      - run:
           # build our application
           name: Build Application
           command: |
@@ -21,12 +30,6 @@ jobs:
       - run:
           name: Sign Application
           command: |
-            /bin/echo ${DEV_CERT} | /usr/bin/base64 -D -i - -o developer-cert.p12
-            /usr/bin/security create-keychain -p 'temporaryPassword' MyKeychain.keychain
-            /usr/bin/security list-keychains -s login.keychain MyKeychain.keychain
-            /usr/bin/security set-keychain-settings MyKeychain.keychain
-            /usr/bin/security import developer-cert.p12 -k "MyKeychain.keychain" -P ${DEV_CERT_PWD} -T /usr/bin/codesign
-            /usr/bin/security set-key-partition-list -S apple-tool:,apple: -s -k "temporaryPassword" "MyKeychain.keychain"
             /usr/bin/codesign --verbose=4 -f -s "Mac Developer: Tom Howard (Mountain Pass PTY LTD)" --entitlements "Mobile Router Status/Mobile Router Status.entitlements" build/Release/Mobile\ Router\ Status.app
             /usr/bin/codesign -dv --verbose=4 build/Release/Mobile\ Router\ Status.app
             /usr/bin/security list-keychains -s login.keychain
