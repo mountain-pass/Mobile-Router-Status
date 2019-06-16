@@ -3,7 +3,6 @@
   "description": "Displays Mobile Router Status in OS X Menu Bar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "ci:validate": "circleci config validate",
     "ci:process": "circleci config process .circleci/config.yml",
     "lint": "node_modules/.bin/prettier --write **/*.json",

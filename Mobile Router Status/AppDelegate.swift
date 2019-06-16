@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         refresh(self)
         constructMenu()
         popover.contentViewController = ConfigViewController.freshController()
-        var helloWorldTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(AppDelegate.refresh), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(AppDelegate.refresh), userInfo: nil, repeats: true)
 
     }
 
@@ -37,11 +37,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             if error == nil,let usableData = data {
-                print("no error")
-                print(response as Any)
-                print(usableData) //JSONSerialization
-                if let jsonObj = try? JSONSerialization.jsonObject(with: usableData, options: .allowFragments) as? NSDictionary {
-                    print(jsonObj!);
+//                print("no error")
+//                print(response as Any)
+//                print(usableData) //JSONSerialization
+                if let jsonObj = ((try? JSONSerialization.jsonObject(with: usableData, options: .allowFragments) as? NSDictionary) as NSDictionary??) {
+//                    print(jsonObj!);
                     if let wwanDic = jsonObj!.value(forKey: "wwan") as? NSDictionary {
                         if let connection = wwanDic.value(forKey: "connection") as? String {
                             DispatchQueue.main.async {
@@ -50,7 +50,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                                 }
                                 else {
                                     if let signalStrengthDict = wwanDic.value(forKey: "signalStrength") as? NSDictionary {
-                                        print(signalStrengthDict)
+//                                        print(signalStrengthDict)
                                         if let bars = signalStrengthDict.value(forKey: "bars") as? NSInteger {
                                             if( bars >= 0 && bars <= 5) {
                                                 self.statusItem.button?.image = NSImage(named:NSImage.Name("signal" + String(bars)))
@@ -65,7 +65,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             else {
                 print("error")
-
             }
 
         }

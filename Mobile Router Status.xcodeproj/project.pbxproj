@@ -106,6 +106,7 @@
 				TargetAttributes = {
 					263539C621E3F3A60079EC1E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
 								enabled = 0;
@@ -302,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.mountain-pass.Mobile-Router-Status";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -322,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.mountain-pass.Mobile-Router-Status";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
